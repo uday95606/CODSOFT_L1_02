@@ -1,0 +1,144 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px 50px;
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin: 0 0 20px 0;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #ff5722;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #e64a19;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255,87,34,0.4);
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 80px 50px;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 80px 50px;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background: #222;
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255,87,34,0.4);
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    padding: 80px 50px;
+    background: linear-gradient(135deg, #2c2c2c, #121212);
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #111;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+footer .social-links a {
+    color: #ff5722;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #e64a19;
+}
+
+/* Responsive */
+@media(max-width: 900px){
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image img {
+        width: 300px;
+        margin-top: 30px;
+    }
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
